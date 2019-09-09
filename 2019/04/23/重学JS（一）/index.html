@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
-<title>重学JavaScript.md - 雪 琅</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 3.8.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>重学JavaScript 1.md - 雪 琅</title>
 
 
-
-    <meta name="description" content="1.基本概念 语法 数据类型 流程控制语句 函数  1.1 语法1.1.1 区分大小写ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。 1.1.2 标识符标识符：即变量、属性、函数的名字，或者函数的参数。规则：由数字、下划线、字母、$组成，不能由">
+    <meta name="description" content="1.基本概念 语法 数据类型 流程控制语句 函数  1.1 语法1.1.1 区分大小写ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。">
 <meta name="keywords" content="ECMAScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="重学JavaScript.md">
+<meta property="og:title" content="重学JavaScript 1.md">
 <meta property="og:url" content="http://yoursite.com/2019/04/23/重学JS（一）/index.html">
 <meta property="og:site_name" content="雪 琅">
-<meta property="og:description" content="1.基本概念 语法 数据类型 流程控制语句 函数  1.1 语法1.1.1 区分大小写ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。 1.1.2 标识符标识符：即变量、属性、函数的名字，或者函数的参数。规则：由数字、下划线、字母、$组成，不能由">
+<meta property="og:description" content="1.基本概念 语法 数据类型 流程控制语句 函数  1.1 语法1.1.1 区分大小写ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-08T07:43:15.139Z">
+<meta property="og:updated_time" content="2019-09-09T10:17:54.419Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="重学JavaScript.md">
-<meta name="twitter:description" content="1.基本概念 语法 数据类型 流程控制语句 函数  1.1 语法1.1.1 区分大小写ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。 1.1.2 标识符标识符：即变量、属性、函数的名字，或者函数的参数。规则：由数字、下划线、字母、$组成，不能由">
+<meta name="twitter:title" content="重学JavaScript 1.md">
+<meta name="twitter:description" content="1.基本概念 语法 数据类型 流程控制语句 函数  1.1 语法1.1.1 区分大小写ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -28,7 +31,7 @@
 
 
 
-<link rel="icon" href="/images/favicon.svg">
+<link rel="icon" href="/images/favicon.ico">
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
@@ -81,10 +84,6 @@
     
     
 
-    
-    
-    
-
 
 <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -94,7 +93,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="重学JavaScript.md" height="28">
+                <img src="/images/logo.png" alt="重学JavaScript 1.md" height="28">
             
             </a>
         </div>
@@ -102,15 +101,20 @@
             
             <div class="navbar-start">
                 
-                <a class="navbar-item" href="/">主页</a>
+                <a class="navbar-item"
+                href="/">主页</a>
                 
-                <a class="navbar-item" href="/archives">归档</a>
+                <a class="navbar-item"
+                href="/archives">归档</a>
                 
-                <a class="navbar-item" href="/categories">分类</a>
+                <a class="navbar-item"
+                href="/categories">分类</a>
                 
-                <a class="navbar-item" href="/tags">标签</a>
+                <a class="navbar-item"
+                href="/tags">标签</a>
                 
-                <a class="navbar-item" href="/about">关于</a>
+                <a class="navbar-item"
+                href="/about">关于</a>
                 
             </div>
             
@@ -145,7 +149,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T04:20:58.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T04:20:58.838Z">2019-04-23</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/学习笔记/">学习笔记</a>
@@ -155,7 +159,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    6 分钟 读完 (大约 876 个字)
+                    6 分钟 读完 (大约 877 个字)
                 </span>
                 
                 
@@ -164,19 +168,20 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                重学JavaScript.md
+                重学JavaScript 1.md
             
         </h1>
         <div class="content">
-            <h3 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1.基本概念"></a>1.基本概念</h3><ul>
+            <h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1.基本概念"></a>1.基本概念</h2><ul>
 <li>语法</li>
 <li>数据类型</li>
 <li>流程控制语句</li>
 <li>函数</li>
 </ul>
-<h4 id="1-1-语法"><a href="#1-1-语法" class="headerlink" title="1.1 语法"></a>1.1 语法</h4><h5 id="1-1-1-区分大小写"><a href="#1-1-1-区分大小写" class="headerlink" title="1.1.1 区分大小写"></a>1.1.1 区分大小写</h5><p>ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。</p>
-<h5 id="1-1-2-标识符"><a href="#1-1-2-标识符" class="headerlink" title="1.1.2 标识符"></a>1.1.2 标识符</h5><p>标识符：即变量、属性、函数的名字，或者函数的参数。<br>规则：由<strong>数字、下划线、字母、$</strong>组成，不能由数字开头。<br>一般惯例按照驼峰命名法；不能将关键字、保留字以及true、false和null作为标识符。</p>
-<h5 id="1-1-3-js注释"><a href="#1-1-3-js注释" class="headerlink" title="1.1.3 js注释"></a>1.1.3 js注释</h5><p>是用了C风格的注释，包括单行注释和块级注释：</p>
+<h3 id="1-1-语法"><a href="#1-1-语法" class="headerlink" title="1.1 语法"></a>1.1 语法</h3><h4 id="1-1-1-区分大小写"><a href="#1-1-1-区分大小写" class="headerlink" title="1.1.1 区分大小写"></a>1.1.1 区分大小写</h4><p>ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。</p>
+<a id="more"></a>
+<h4 id="1-1-2-标识符"><a href="#1-1-2-标识符" class="headerlink" title="1.1.2 标识符"></a>1.1.2 标识符</h4><p>标识符：即变量、属性、函数的名字，或者函数的参数。<br>规则：由<strong>数字、下划线、字母、$</strong>组成，不能由数字开头。<br>一般惯例按照驼峰命名法；不能将关键字、保留字以及true、false和null作为标识符。</p>
+<h4 id="1-1-3-js注释"><a href="#1-1-3-js注释" class="headerlink" title="1.1.3 js注释"></a>1.1.3 js注释</h4><p>是用了C风格的注释，包括单行注释和块级注释：</p>
 <ul>
 <li><p>单行注释</p>
 <p>// 单行注释</p>
@@ -188,13 +193,13 @@
 <p>*/</p>
 </li>
 </ul>
-<h5 id="1-1-4-严格模式-strict-mode"><a href="#1-1-4-严格模式-strict-mode" class="headerlink" title="1.1.4 严格模式(strict mode)"></a>1.1.4 严格模式(strict mode)</h5><p>严格模式(ECMAScript 5中引入)：为js定义了一种不同的解析与执行模型，在严格模式下ES 3中的一些不确定的行为将得到处理，对某些不安全的操作也会抛出错误。严格模式下，js执行结果会有很大不同。</p>
+<h4 id="1-1-4-严格模式-strict-mode"><a href="#1-1-4-严格模式-strict-mode" class="headerlink" title="1.1.4 严格模式(strict mode)"></a>1.1.4 严格模式(strict mode)</h4><p>严格模式(ECMAScript 5中引入)：为js定义了一种不同的解析与执行模型，在严格模式下ES 3中的一些不确定的行为将得到处理，对某些不安全的操作也会抛出错误。严格模式下，js执行结果会有很大不同。</p>
 <p>要在整个脚本中启用严格模式，需要在顶部添加如下代码：</p>
 <p><code>&quot;use strict&quot;</code></p>
 <p>该代码是一个编译指令，切换js引擎到严格模式。</p>
 <p>如果函数内部的上方包含这条编译指令，可以指定函数在严格模式下执行：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function doSometing ()&#123;</span><br><span class="line">  &quot;use strict&quot;</span><br><span class="line">  // 函数体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h5 id="1-1-5-语句"><a href="#1-1-5-语句" class="headerlink" title="1.1.5 语句"></a>1.1.5 语句</h5><p>ECMAScript语句以一个<strong>分号</strong>结尾。增加代码可读性以及性能，降低代码出错率。</p>
-<h3 id="2-变量"><a href="#2-变量" class="headerlink" title="2.变量"></a>2.变量</h3><p>js作为弱类型语言，它的变量是松散的，即可以保存任何类型的数据。说白了就是每个变量仅仅作为保存值的占位符而已。</p>
+<h4 id="1-1-5-语句"><a href="#1-1-5-语句" class="headerlink" title="1.1.5 语句"></a>1.1.5 语句</h4><p>ECMAScript语句以一个<strong>分号</strong>结尾。增加代码可读性以及性能，降低代码出错率。</p>
+<h2 id="2-变量"><a href="#2-变量" class="headerlink" title="2.变量"></a>2.变量</h2><p>js作为弱类型语言，它的变量是松散的，即可以保存任何类型的数据。说白了就是每个变量仅仅作为保存值的占位符而已。</p>
 <p>定义变量时要用<code>var</code>(关键字)操作符，后跟变量名(标识符)，例如：</p>
 <p><code>var message ;</code></p>
 <p>此代码定义了一个名<code>message</code>的变量，可以用来保存任何值(未初始化时，它会保存一个特殊的值–<code>undefined</code>)。也可以在定义变量时直接初始化。初始化的过程就是给变量赋一个值。</p>
@@ -203,7 +208,7 @@
 <blockquote>
 <p>使用一条语句定义多个变量，将每个变量使用<strong>逗号</strong>隔开。初始化化或未初始化均可。<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var message = &quot;hi&quot;,</span><br><span class="line">    found   = false,  // 缩进提高代码可读性.</span><br><span class="line">    age     = 22;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
-<h3 id="3-数据类型"><a href="#3-数据类型" class="headerlink" title="3.数据类型"></a>3.数据类型</h3><ul>
+<h2 id="3-数据类型"><a href="#3-数据类型" class="headerlink" title="3.数据类型"></a>3.数据类型</h2><ul>
 <li>基本数据类型(5种)：Number, String, Boolean, Null, Undefined</li>
 <li>引用数据类型：Object</li>
 </ul>
@@ -233,28 +238,23 @@
         <div class="buttons is-centered">
             
                 
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/alipay.png" alt="支付宝"></div>
+</a>
 
                 
                 
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
-
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/wechat.png" alt="微信"></div>
+</a>
 
                 
         </div>
@@ -300,8 +300,9 @@
             <div class="level-item has-text-centered" style="flex-shrink: 1">
                 <div>
                     
-                        <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="雪琅">
-                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img  src="/images/avatar.png" alt="雪琅">
+                    </figure>
                     
                     <p class="is-size-4 is-block">
                         雪琅
@@ -309,7 +310,7 @@
                     
                     
                     <p class="is-size-6 is-block">
-                        所以到哪里都像快乐被燃起
+                        生命不止，生生不息
                     </p>
                     
                     
@@ -354,38 +355,43 @@
             </div>
         </nav>
         <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
+            <a class="level-item button is-link is-rounded" href="https://github.com/xuelangjing" target="_blank">
                 关注我</a>
         </div>
         
         
         <div class="level is-mobile">
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/ppoffice">
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Github" href="https://github.com/ppoffice">
                 
                 <i class="fab fa-github"></i>
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="https://facebook.com">
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Facebook" href="https://facebook.com">
                 
                 <i class="fab fa-facebook"></i>
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="Twitter" href="https://twitter.com">
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Twitter" href="https://twitter.com">
                 
                 <i class="fab fa-twitter"></i>
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="Dribbble" href="https://dribbble.com">
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Dribbble" href="https://dribbble.com">
                 
                 <i class="fab fa-dribbble"></i>
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/">
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="RSS" href="/">
                 
                 <i class="fas fa-rss"></i>
                 
@@ -503,14 +509,14 @@
             
             <a href="/2019/04/23/重学JS（一）/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="重学JavaScript.md">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="重学JavaScript 1.md">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T04:20:58.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/重学JS（一）/" class="title has-link-black-ter is-size-6 has-text-weight-normal">重学JavaScript.md</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T04:20:58.838Z">2019-04-23</time></div>
+                    <a href="/2019/04/23/重学JS（一）/" class="title has-link-black-ter is-size-6 has-text-weight-normal">重学JavaScript 1.md</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/学习笔记/">学习笔记</a>
                     </p>
@@ -637,14 +643,14 @@
             
             <a href="/2019/04/23/重学JS（一）/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="重学JavaScript.md">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="重学JavaScript 1.md">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T04:20:58.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/重学JS（一）/" class="title has-link-black-ter is-size-6 has-text-weight-normal">重学JavaScript.md</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T04:20:58.838Z">2019-04-23</time></div>
+                    <a href="/2019/04/23/重学JS（一）/" class="title has-link-black-ter is-size-6 has-text-weight-normal">重学JavaScript 1.md</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/学习笔记/">学习笔记</a>
                     </p>
@@ -742,12 +748,13 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="重学JavaScript.md" height="28">
+                    <img src="/images/logo.png" alt="重学JavaScript 1.md" height="28">
                 
                 </a>
                 <p class="is-size-7">
                 &copy; 2019 雪琅&nbsp;
-                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
                 
                 </p>
             </div>
@@ -789,6 +796,21 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
 <script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
 
 
     
@@ -873,13 +895,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
-    <script src="/js/clipboard.js" defer></script>
-    
-
-    
-    
-    
 
 
 <script src="/js/main.js" defer></script>
@@ -888,7 +903,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="searchbox ins-search">
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
