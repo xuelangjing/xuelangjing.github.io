@@ -7,23 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>重学JavaScript 1.md - 雪 琅</title>
+<title>MVC、MVP和MVVM模式 - 雪 琅</title>
 
 
-    <meta name="description" content="1.基本概念 语法 数据类型 流程控制语句 函数  1.1 语法1.1.1 区分大小写ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。">
-<meta name="keywords" content="ECMAScript">
+    <meta name="description" content="1.MVC将软件分为三个部分，如下图所示。  视图(View)：用户界面 控制器(Controller)：业务逻辑 模型(Model)：数据保存">
+<meta name="keywords" content="mvvm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="重学JavaScript 1.md">
-<meta property="og:url" content="http://yoursite.com/2019/04/23/重学JS（一）/index.html">
+<meta property="og:title" content="MVC、MVP和MVVM模式">
+<meta property="og:url" content="http://yoursite.com/2019/09/18/MVVM模式/index.html">
 <meta property="og:site_name" content="雪 琅">
-<meta property="og:description" content="1.基本概念 语法 数据类型 流程控制语句 函数  1.1 语法1.1.1 区分大小写ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。">
+<meta property="og:description" content="1.MVC将软件分为三个部分，如下图所示。  视图(View)：用户界面 控制器(Controller)：业务逻辑 模型(Model)：数据保存">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/thumbnail/cxjs.png">
-<meta property="og:updated_time" content="2019-09-09T19:03:21.431Z">
+<meta property="og:image" content="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1581359692,2911158256&fm=26&gp=0.jpg">
+<meta property="og:updated_time" content="2019-09-18T11:14:46.988Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="重学JavaScript 1.md">
-<meta name="twitter:description" content="1.基本概念 语法 数据类型 流程控制语句 函数  1.1 语法1.1.1 区分大小写ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。">
-<meta name="twitter:image" content="http://yoursite.com/images/thumbnail/cxjs.png">
+<meta name="twitter:title" content="MVC、MVP和MVVM模式">
+<meta name="twitter:description" content="1.MVC将软件分为三个部分，如下图所示。  视图(View)：用户界面 控制器(Controller)：业务逻辑 模型(Model)：数据保存">
+<meta name="twitter:image" content="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1581359692,2911158256&fm=26&gp=0.jpg">
 
 
 
@@ -93,7 +93,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="重学JavaScript 1.md" height="28">
+                <img src="/images/logo.png" alt="MVC、MVP和MVVM模式" height="28">
             
             </a>
         </div>
@@ -147,7 +147,7 @@
     
     <div class="card-image">
         <span  class="image is-7by1">
-            <img class="thumbnail" src="/images/thumbnail/cxjs.png" alt="重学JavaScript 1.md">
+            <img class="thumbnail" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1581359692,2911158256&amp;fm=26&amp;gp=0.jpg" alt="MVC、MVP和MVVM模式">
         </span>
     </div>
     
@@ -155,17 +155,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T04:20:58.838Z">2019-04-23</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/学习笔记/">学习笔记</a>
-                </div>
+                <time class="level-item has-text-grey" datetime="2019-09-17T16:59:49.000Z">2019-09-18</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    6 分钟 读完 (大约 877 个字)
+                    3 分钟 读完 (大约 449 个字)
                 </span>
                 
                 
@@ -174,51 +170,52 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                重学JavaScript 1.md
+                MVC、MVP和MVVM模式
             
         </h1>
         <div class="content">
-            <h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1.基本概念"></a>1.基本概念</h2><ul>
-<li>语法</li>
-<li>数据类型</li>
-<li>流程控制语句</li>
-<li>函数</li>
-</ul>
-<h3 id="1-1-语法"><a href="#1-1-语法" class="headerlink" title="1.1 语法"></a>1.1 语法</h3><h4 id="1-1-1-区分大小写"><a href="#1-1-1-区分大小写" class="headerlink" title="1.1.1 区分大小写"></a>1.1.1 区分大小写</h4><p>ECMAScript中的一切都要区分大小写（变量、函数名、操作符）；例如：test和Test分别表示两个不同的变量，而函数名不能使用typeof，因为它是关键字，但是typeOf就可以是个有效的函数名。</p>
-<a id="more"></a>
-<h4 id="1-1-2-标识符"><a href="#1-1-2-标识符" class="headerlink" title="1.1.2 标识符"></a>1.1.2 标识符</h4><p>标识符：即变量、属性、函数的名字，或者函数的参数。<br>规则：由<strong>数字、下划线、字母、$</strong>组成，不能由数字开头。<br>一般惯例按照驼峰命名法；不能将关键字、保留字以及true、false和null作为标识符。</p>
-<h4 id="1-1-3-js注释"><a href="#1-1-3-js注释" class="headerlink" title="1.1.3 js注释"></a>1.1.3 js注释</h4><p>是用了C风格的注释，包括单行注释和块级注释：</p>
+            <!-- 文章模板 -->
+<h3 id="1-MVC"><a href="#1-MVC" class="headerlink" title="1.MVC"></a>1.MVC</h3><p>将软件分为三个部分，如下图所示。</p>
 <ul>
-<li><p>单行注释</p>
-<p>// 单行注释</p>
-</li>
-<li><p>多行注释</p>
-<p>/*</p>
-<p>*  这是一个多行</p>
-<p>*  （块级）注释。注：第二三行的星号不是必须的，只是为了提高代码可读性。</p>
-<p>*/</p>
-</li>
+<li>视图(View)：用户界面</li>
+<li>控制器(Controller)：业务逻辑</li>
+<li>模型(Model)：数据保存<a id="more"></a>
+<img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015020104.png" alt="MVC"></li>
 </ul>
-<h4 id="1-1-4-严格模式-strict-mode"><a href="#1-1-4-严格模式-strict-mode" class="headerlink" title="1.1.4 严格模式(strict mode)"></a>1.1.4 严格模式(strict mode)</h4><p>严格模式(ECMAScript 5中引入)：为js定义了一种不同的解析与执行模型，在严格模式下ES 3中的一些不确定的行为将得到处理，对某些不安全的操作也会抛出错误。严格模式下，js执行结果会有很大不同。</p>
-<p>要在整个脚本中启用严格模式，需要在顶部添加如下代码：</p>
-<p><code>&quot;use strict&quot;</code></p>
-<p>该代码是一个编译指令，切换js引擎到严格模式。</p>
-<p>如果函数内部的上方包含这条编译指令，可以指定函数在严格模式下执行：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function doSometing ()&#123;</span><br><span class="line">  &quot;use strict&quot;</span><br><span class="line">  // 函数体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="1-1-5-语句"><a href="#1-1-5-语句" class="headerlink" title="1.1.5 语句"></a>1.1.5 语句</h4><p>ECMAScript语句以一个<strong>分号</strong>结尾。增加代码可读性以及性能，降低代码出错率。</p>
-<h2 id="2-变量"><a href="#2-变量" class="headerlink" title="2.变量"></a>2.变量</h2><p>js作为弱类型语言，它的变量是松散的，即可以保存任何类型的数据。说白了就是每个变量仅仅作为保存值的占位符而已。</p>
-<p>定义变量时要用<code>var</code>(关键字)操作符，后跟变量名(标识符)，例如：</p>
-<p><code>var message ;</code></p>
-<p>此代码定义了一个名<code>message</code>的变量，可以用来保存任何值(未初始化时，它会保存一个特殊的值–<code>undefined</code>)。也可以在定义变量时直接初始化。初始化的过程就是给变量赋一个值。</p>
-<p>注：<strong>var操作符定义的变量，将成为定义该变量的作用域中的局部变量。</strong> 即，如果在函数中使用<code>var</code>定义一个变量，那么变量在函数退出后就会被销毁。<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function test ()&#123;</span><br><span class="line">  var message = 0;  //局部变量</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br><span class="line">alert(message);     //报错！！！ 访问不到</span><br></pre></td></tr></table></figure></p>
-<p>可以省略<code>var</code>操作符来创建一个全局变量，但不推荐，因为在局部作用域中定义全局变量将会很难维护</p>
+<p>三部分之间的通信方式如下：<br><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015020105.png" alt="MVC"></p>
 <blockquote>
-<p>使用一条语句定义多个变量，将每个变量使用<strong>逗号</strong>隔开。初始化化或未初始化均可。<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var message = &quot;hi&quot;,</span><br><span class="line">    found   = false,  // 缩进提高代码可读性.</span><br><span class="line">    age     = 22;</span><br></pre></td></tr></table></figure></p>
+<p>1.View 传送指令到 Controller</p>
+<p>2.Controller 完成业务逻辑后，要求 Model 改变状态</p>
+<p>3.Model 将新的数据发送到 View，用户得到反馈<br>所有通信都是单向的</p>
 </blockquote>
-<h2 id="3-数据类型"><a href="#3-数据类型" class="headerlink" title="3.数据类型"></a>3.数据类型</h2><ul>
-<li>基本数据类型(5种)：Number, String, Boolean, Null, Undefined</li>
-<li>引用数据类型：Object</li>
+<p>接收用户指令时，MVC可以分成两种方式：</p>
+<ul>
+<li>通过View接收指令，传递给Controller</li>
+<li>另一种是直接通过controller接受指令<br><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015020108.png" alt="实例"></li>
 </ul>
-<p>ECMAScript不支持任何形式创建自定义类型，所有的值最终都是以上6种数据类型之一。</p>
+<h3 id="2-MVP"><a href="#2-MVP" class="headerlink" title="2.MVP"></a>2.MVP</h3><p>MVP模式将Controller改名为Presenter，同时改变了通信方向。<br><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015020109.png" alt="MVP"></p>
+<blockquote>
+<ol>
+<li><p>各部分之间的通信是双向的</p>
+</li>
+<li><p>View 与 Model不发生联系，都通过presenter传递</p>
+</li>
+<li><p>View非常薄，不部署任何业务逻辑，称为“被动视图”(Passive View),即没有任何主动性，而Presenter很厚，所有的业务逻辑都部署在其中。</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="3-MVVM"><a href="#3-MVVM" class="headerlink" title="3.MVVM"></a>3.MVVM</h3><p><strong>1、 实现数据和视图的分离</strong><br><br><strong>2、通过数据来驱动视图，只需关心数据变化，DOM操作被封装</strong><br><img src="https://image-static.segmentfault.com/203/692/203692599-5b67183e6c6c7_articlex" alt="MVVM"></p>
+<ul>
+<li>View：视图</li>
+<li>Model：模型</li>
+<li>ViewModel：视图模型<br>View通过ViewModel的DOM Listeners将事件绑定到Model上，Model通过Date Bindings来管理View的数据，ViewModel从中起到一个连接桥作用</li>
+</ul>
+<p>MVVM实现的主要三个点：</p>
+<blockquote>
+<p>1.响应式：vue如何监听data的属性变化</p>
+<p>2.模板解析：vue的模板是任何解析的</p>
+<p>3.渲染：vue模板是如何被渲染成HTML的</p>
+</blockquote>
 
         </div>
         
@@ -226,7 +223,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/ECMAScript/">ECMAScript</a>
+                    <a class="has-link-grey -link" href="/tags/mvvm/">mvvm</a>
                 </div>
             </div>
         </div>
@@ -272,13 +269,13 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/08/09/markdown语法/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">markdown语法</span>
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/09/10/常见浏览器兼容问题及解决/">
+                <span class="level-item">常见浏览器兼容问题及解决</span>
+                <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
-        
         
     </div>
 </div>
@@ -895,7 +892,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="重学JavaScript 1.md" height="28">
+                    <img src="/images/logo.png" alt="MVC、MVP和MVVM模式" height="28">
                 
                 </a>
                 <p class="is-size-7">
